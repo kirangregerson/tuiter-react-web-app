@@ -1,0 +1,139 @@
+.wd-theme-color {
+    background-color: black;
+}
+
+body > * {
+    margin-left: 16px;
+}
+
+.wd-border-color { color: rgb(47, 51, 54) }
+
+.wd-search-theme {
+    background-color: #212327;
+    color: #6c757c;
+    border-radius: 50px;
+    padding-left: 10px;
+}
+
+.wd-search-color {
+    background-color: #212327;
+    color: #6c757c;
+}
+
+.wd-search-layout {
+    clear: both;
+}
+
+.wd-search-text-color {
+    background-color: #212327;
+    color: white;
+    font-size: 25px;
+    width: 50%;
+    border: none;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-search-col-left-sidebar {
+    width: 20%;
+    float: left;
+}
+
+.wd-search-col-main-content {
+    width: 60%;
+    float: left;
+}
+
+.wd-search-col-right-sidebar {
+    position: absolute;
+    right: 12px;
+}
+
+ul#nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 16px;
+}
+
+ul#nav-bar > li {
+    display: inline;
+    padding: 16px;
+}
+
+.wd-tab-text {
+    color: rgb(110, 118, 125);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.wd-tab-col-selected {
+    border-bottom: rgb(29, 161, 242) solid 5px;
+}
+
+.wd-tab-text-selected {
+    color: rgb(29, 161, 242);
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.wd-content-pane > div {
+    padding: 30px;
+    border-bottom: 1px solid rgb(47, 51, 54);
+    border-top: 1px solid rgb(47, 51, 54);
+}
+
+.wd-content-default {
+
+}
+
+.wd-content-default > h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.wd-content-default > div {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-content-topic > img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    float: right;
+    border-right: 16px;
+    position: relative;
+    top: -10px;
+}
+
+.wd-content-topic > h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.wd-content-topic > div {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-content-authored > img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    float: right;
+    border-right: 16px;
+    position: relative;
+    top: -10px;
+}
+
+.wd-content-authored > h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.wd-content-authored > div {
+    color: white;
+    font-size: 13px;
+}

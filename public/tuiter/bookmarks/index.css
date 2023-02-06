@@ -1,0 +1,87 @@
+.wd-theme-color {
+    background-color: black;
+}
+
+body > * {
+    margin-left: 16px;
+}
+
+.wd-border-color { color: rgb(47, 51, 54) }
+
+.wd-bookmarks-header {
+    padding-top: 12px;
+    border-bottom: rgb(47, 51, 54) 1px;
+    padding-bottom: 12px;
+}
+
+.wd-bookmarks-header > h3 {
+    font-size: 20px;
+    color: white;
+}
+
+.wd-handle {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.wd-post-date {
+    font-size: 15px;
+    color: lightgray;
+    padding-left: 5px;
+}
+
+.wd-bookmarked-tuit {
+    padding-top: 12px;
+}
+
+.wd-bookmarked-tuit-text {
+}
+
+.wd-tuit-content {
+    padding-left: 60px;
+}
+
+.wd-bookmarked-tuit-text > p {
+    color: white;
+    max-width: 506px;
+}
+
+.wd-profile-info > .wd-bookmarked-tuit-text {
+    color: white;
+    font-size: 15px;
+}
+
+.wd-profile-pic {
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.wd-content-image {
+    width: 504px;
+    height: 264px;
+    border-radius: 20px;
+}
+
+.wd-icons-bar {
+
+}
+
+.wd-icon-num {
+    padding-right: 30px;
+    color: lightgray;
+    font-size: 12px;
+    vertical-align: center;
+}
+
+.wd-icon-num-heart {
+    padding-right: 30px;
+    color: red;
+    font-size: 12px;
+}
+
+.wd-icon {
+    width: 25px;
+    height: 25px;
+    padding-right: 12px;
+}
