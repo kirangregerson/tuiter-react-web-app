@@ -5,86 +5,372 @@
     <title>Explore</title>
     <link href="index.css"
           rel="stylesheet">
+    <link href="../../vendors/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
-<body class="wd-theme-color">
-    <div class="wd-rid-row">
-        <div class="wd-search-col-main-content" class="wd=search-theme">
-            <form id="search-bar" class="wd-search-theme">
-                <img src="magnifying.png" width="20px" height="20px">
-                <input id="search" placeholder="Search Tuiter" class="wd-search-text-color"/>
-            </form>
+<body class="container">
+    <div class="row">
+        <!--Left-pane nav bar-->
+        <div id="left-navbar" class="col-3">
+            <div>
+                <div class="row" class="tab">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="row" href="home.html">
+                <span>
+                    <i class="fa fa-home"></i>
+                    Home
+                </span>
+                </div>
+                <div class="row bg-primary text-white" href="explore.html">
+                <span>
+                    <i class="fa fa-hashtag"></i>
+                    Explore
+                </span>
+                </div>
+                <div class="row" href="notifications.html">
+                <span>
+                    <i class="fa fa-bell"></i>
+                    Notifications
+                </span>
+                </div>
+                <div class="row" href="messages.html">
+                <span>
+                    <i class="fa fa-envelope"></i>
+                    Messages
+                </span>
+                </div>
+                <div class="row" href="bookmarks.html">
+                <span>
+                    <i class="fa fa-bookmark"></i>
+                    Bookmarks
+                </span>
+                </div>
+                <div class="row" href="lists.html">
+                <span>
+                    <i class="fa fa-list"></i>
+                    Lists
+                </span>
+                </div>
+                <div class="row" href="profile.html">
+                <span>
+                    <i class="fa fa-user"></i>
+                    Profile
+                </span>
+                </div>
+                <div class="row" href="more.html">
+                <span>
+                    <i class="fa fa-ellipsis-h"></i>
+                    More
+                </span>
+                </div>
+            </div>
+            <!--Tuit Button-->
+            <div id="tuit-button" class="row">
+                <button class="btn btn-primary rounded-pill">
+                    Tuit
+                </button>
+            </div>
         </div>
-        <div class="wd-search-col-right-sidebar">
-            <a href="explore-settings.html">
-                <img src="gear.png" width="30px" height="30px">
-            </a>
-        </div>
-    </div>
-    <br/>
-    <br/>
-    <ul id="nav-bar" class="wd-grid-row">
-        <li class="wd-tab-col-selected">
-            <a href="for-you.html" class="wd-tab-text-selected">For you</a>
-        </li>
-        <li>
-            <a href="trending.html" class="wd-tab-text">Trending</a>
-        </li>
-        <li>
-            <a href="covid19.html" class="wd-tab-text">COVID-19</a>
-        </li>
-        <li>
-            <a href="news.html" class="wd-tab-text">News</a>
-        </li>
-        <li>
-            <a href="sports.html" class="wd-tab-text">Sports</a>
-        </li>
-        <li>
-            <a href="entertainment.html" class="wd-tab-text">Entertainment</a>
-        </li>
-    </ul>
-    <div id="content" class="wd-content-pane">
-        <div class="wd-content-default">
-            <div>
-                Science
-            </div>
-            <h3>Starship</h3>
-            <div>
-                56.5k Tuits
-            </div>
-        </div>
-        <div class="wd-content-default">
-            <div>
-                Sports
-            </div>
-            <h3>Falcons</h3>
-            <div>
-                22.8k Tuits
-            </div>
-        </div>
-        <div class="wd-content-authored">
-            <img src="kidney.jpg">
-            <div>
-                The Washington Post
-            </div>
-            <h3>Opinion: We need to rethink our stance on organ harvesting</h3>
 
-        </div>
-        <div class="wd-content-topic">
-            <img src="luxembourg.jpg">
-            <div>
-                COVID-19
+        <!--Main Content-->
+        <div id="middle-content" class="col-6">
+            <!--Search Bar-->
+            <div id="middle-content-search-bar" class="row">
+                <div class="col-8">
+                    <div class="search-bar row">
+                        <i id="search-icon" class="fa fa-search col-1"></i>
+                        <form class="col">
+                            <input type="search"
+                                   class="form-control border-0"
+                                   id="search-bar-text"
+                                   placeholder="Search Tuiter">
+                        </form>
+                    </div>
+                </div>
+                <i id="settings-icon" class="fa fa-cog fa-2x link-primary col-1"></i>
             </div>
-            <h3>Live news and updates for Luxembourg</h3>
-        </div>
-        <div class="wd-content-default">
-            <div>
-                Trending in Gaming
+
+            <!--Navigation Tabs-->
+            <div id="middle-content-tabs" class="row">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entertainment</a>
+                    </li>
+                </ul>
             </div>
-            <h3>Sonic</h3>
-            <div>
-                106.5k Tuits
+
+            <!--Content!-->
+            <div id="middle-content-pane">
+                <div id="headlined-tuit" class="card">
+                    <img class="card-img-top" src="spacex.jpg">
+                    <div class="card-img-overlay d-flex align-items-end flex-wrap">
+                        <h4 id="headlined-tuit-text" class="card-title text-stroke text-white pt-4">
+                            SpaceX's Starship
+                        </h4>
+                    </div>
+                </div>
+                <div id="featured-content">
+                    <ul>
+                        <li class="row featured-content-tab container">
+                            <div class="col content-text">
+                                <div class="content-topic">
+                                    Web Development
+                                </div>
+                                <div class="content-header row">
+                                    <div class="col">
+                                        ReactJS
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+                                    <div class="col content-timestamp">
+                                         - 2h
+                                    </div>
+                                </div>
+                                <div class="content-body">
+                                    React.js is a component based front end library that makes it very easy to build Single
+                                    Page Applications or SPAs
+                                </div>
+                            </div>
+                            <div class="col mx-auto text-center">
+                                <img src="react.jpg" class="featured-content-image">
+                            </div>
+                        </li>
+
+                        <li class="row featured-content-tab container">
+                            <div class="col content-text">
+                                <div class="content-header row">
+                                    <div class="col">
+                                        JavaScript
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+                                    <div class="col content-timestamp">
+                                        - 2h
+                                    </div>
+                                </div>
+                                <div class="content-body">
+                                    JavaScript is a programming language that can run on browsers as well as desktops
+                                </div>
+                                <div class="content-tuit-count">
+                                    123k Tuits
+                                </div>
+                            </div>
+                            <div class="col mx-auto text-center">
+                                <img src="javascript.jpg" class="featured-content-image">
+                            </div>
+                        </li>
+
+                        <li class="row featured-content-tab container">
+                            <div class="col content-text">
+                                <div class="content-topic">
+                                    Web Development
+                                </div>
+                                <div class="content-header row">
+                                    <div class="col">
+                                        jQuery
+                                    </div>
+                                </div>
+                                <div class="content-tuit-count">
+                                    123k Tuits
+                                </div>
+                            </div>
+                            <div class="col mx-auto text-center">
+                                <img src="jquery.jpg" class="featured-content-image">
+                            </div>
+                        </li>
+
+                        <li class="row featured-content-tab container">
+                            <div class="col content-text">
+                                <div class="content-topic">
+                                    Web Development
+                                </div>
+                                <div class="content-header row">
+                                    <div class="col">
+                                        NodeJS
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+                                    <div class="col content-timestamp">
+                                        - 2h
+                                    </div>
+                                </div>
+                                <div class="content-tuit-count">
+                                    123k Tuits
+                                </div>
+                            </div>
+                            <div class="col mx-auto text-center">
+                                <img src="nodejs.jpg" class="featured-content-image">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Suggestions-->
+        <div id="right-suggestions" class="col-3">
+            <div class="col">
+                <div id="suggestions-title" class="row">
+                    Who to follow
+                </div>
+
+                <div class="row suggestion align-items-start">
+                    <div class="col-3">
+                        <img src="java.jpg" class="suggestion-img">
+                    </div>
+                    <div class="suggestion-text col">
+                        <div class="suggestion-header">
+                            Java
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="suggestion-handle">
+                            @Java
+                        </div>
+                    </div>
+                    <div class="follow-btn col">
+                        <button class="btn btn-primary rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row suggestion align-items-start">
+                    <div class="col-3">
+                        <img src="pierce.jpg" class="suggestion-img">
+                    </div>
+                    <div class="suggestion-text col">
+                        <div class="suggestion-header">
+                            Pierce Brosnan
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="suggestion-handle">
+                            @ThePierceBrosnan
+                        </div>
+                    </div>
+                    <div class="follow-btn col">
+                        <button class="btn btn-primary rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row suggestion align-items-start">
+                    <div class="col-3">
+                        <img src="luxembourg.jpg" class="suggestion-img">
+                    </div>
+                    <div class="suggestion-text col">
+                        <div class="suggestion-header">
+                            Luxembourg
+                            <i class="fa fa-check-circle"></i>
+                        </div>
+                        <div class="suggestion-handle">
+                            @RealLifeLuxembourg
+                        </div>
+                    </div>
+                    <div class="follow-btn col">
+                        <button class="btn btn-primary rounded-pill">
+                            Follow
+                        </button>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </body>
 </html>
+
+
+
+
+
+<!--    <div class="wd-rid-row">-->
+<!--        <div class="wd-search-col-main-content" class="wd=search-theme">-->
+<!--            <form id="search-bar" class="wd-search-theme">-->
+<!--                <img src="magnifying.png" width="20px" height="20px">-->
+<!--                <input id="search" placeholder="Search Tuiter" class="wd-search-text-color"/>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--        <div class="wd-search-col-right-sidebar">-->
+<!--            <a href="explore-settings.html">-->
+<!--                <img src="gear.png" width="30px" height="30px">-->
+<!--            </a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <br/>-->
+<!--    <br/>-->
+<!--    <ul id="nav-bar" class="wd-grid-row">-->
+<!--        <li class="wd-tab-col-selected">-->
+<!--            <a href="for-you.html" class="wd-tab-text-selected">For you</a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="trending.html" class="wd-tab-text">Trending</a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="covid19.html" class="wd-tab-text">COVID-19</a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="news.html" class="wd-tab-text">News</a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="sports.html" class="wd-tab-text">Sports</a>-->
+<!--        </li>-->
+<!--        <li>-->
+<!--            <a href="entertainment.html" class="wd-tab-text">Entertainment</a>-->
+<!--        </li>-->
+<!--    </ul>-->
+<!--    <div id="content" class="wd-content-pane">-->
+<!--        <div class="wd-content-default">-->
+<!--            <div>-->
+<!--                Science-->
+<!--            </div>-->
+<!--            <h3>Starship</h3>-->
+<!--            <div>-->
+<!--                56.5k Tuits-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="wd-content-default">-->
+<!--            <div>-->
+<!--                Sports-->
+<!--            </div>-->
+<!--            <h3>Falcons</h3>-->
+<!--            <div>-->
+<!--                22.8k Tuits-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="wd-content-authored">-->
+<!--            <img src="kidney.jpg">-->
+<!--            <div>-->
+<!--                The Washington Post-->
+<!--            </div>-->
+<!--            <h3>Opinion: We need to rethink our stance on organ harvesting</h3>-->
+
+<!--        </div>-->
+<!--        <div class="wd-content-topic">-->
+<!--            <img src="luxembourg.jpg">-->
+<!--            <div>-->
+<!--                COVID-19-->
+<!--            </div>-->
+<!--            <h3>Live news and updates for Luxembourg</h3>-->
+<!--        </div>-->
+<!--        <div class="wd-content-default">-->
+<!--            <div>-->
+<!--                Trending in Gaming-->
+<!--            </div>-->
+<!--            <h3>Sonic</h3>-->
+<!--            <div>-->
+<!--                106.5k Tuits-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
