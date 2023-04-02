@@ -1,10 +1,12 @@
 import React from "react";
 import TuitStats from "./TuitStats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+// import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+
 const TuitItem = (
     {
-        post = {
+        tuit = {
             "topic": "Space",
             "userName": "SpaceX",
             "handle": "@spacexxx",
@@ -17,24 +19,24 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return(
         <li className="list-group-item">
             <div className="row">
                 <div className="col-2">
-                    <img width={70} className="float-end rounded-circle" src={`/images/${post.image}`}/>
+                    <img width={70} className="float-end rounded-circle" src={`/images/${tuit.image}`}/>
                 </div>
-                <div className="col-10">
+                <div className="col-12">
                     <div className="row">
-                        <div className="fw-bold col-2">{post.userName} </div>
-                        <div className="col-4">{post.handle} &#x2022; {post.time}</div>
+                        <div className="fw-bold col-2">{tuit.userName} </div>
+                        <div className="col-4">{tuit.handle} &#x2022; {tuit.time}</div>
                         <i className="bi bi-x-lg float-end col-6"
-                           onClick={() => deleteTuitHandler(post._id)}></i>
+                           onClick={() => deleteTuitHandler(tuit._id)}></i>
                     </div>
-                    <div>{post.tuit}</div>
-                    <TuitStats key={post._id} post={post}/>
+                    <div>{tuit.tuit}</div>
+                    <TuitStats key={tuit._id} tuit={tuit}/>
                 </div>
             </div>
         </li>
